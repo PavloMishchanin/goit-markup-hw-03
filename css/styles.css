@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -12,6 +22,8 @@ body {
   --logo-studio-color: #2e2f42;
   --address-link-color: #434455;
 }
+
+
 
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -39,7 +51,7 @@ ul, ol {
   color: #404bbf;
 }
 
-.logo {
+.header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -47,6 +59,7 @@ ul, ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-color);
+  margin: 25.5px 76px 25.5px 156px;
 }
 
 .logo-studio {
@@ -56,6 +69,24 @@ ul, ol {
   line-height: 1.16;
   text-transform: uppercase;
   color: var(--logo-studio-color);
+}
+
+.header-container {
+  display: flex;
+  width: 1440px;
+  height: 72px;
+  margin: 0 auto;
+}
+
+.container-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .header-item {
@@ -76,6 +107,14 @@ ul, ol {
 
 .header-address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 156px 24px 332px;
 }
 
 .address-link {
@@ -95,7 +134,15 @@ ul, ol {
 /*---------hero------*/
 
 .hero {
+  
+}
+
+.container-hero {
+  display: flex;
   background-color: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -104,9 +151,15 @@ ul, ol {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ffffff;
+  max-width: 496px;
+  max-height: 120px;
+  margin: 188px 472px 48px 472px;
+  position: absolute;
 }
 
 .hero-btn {
+  width: 169px;
+  height: 56px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -115,6 +168,8 @@ ul, ol {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  margin: 356px 635px 188px;
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -137,6 +192,17 @@ ul, ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-top-color);
+}
+
+.features-container {
+
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /*------------------Project card--------------*/
@@ -188,6 +254,13 @@ ul, ol {
   color: var(--title-top-color);
 }
 
+.section-work-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+
 /*-------------------Our Team----------------*/
 
 .section-team {
@@ -201,6 +274,13 @@ ul, ol {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--title-top-color);
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.section-team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .section-team-item {

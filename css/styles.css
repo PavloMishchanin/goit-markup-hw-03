@@ -129,6 +129,7 @@ ul, ol {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /*---------hero------*/
@@ -195,7 +196,11 @@ ul, ol {
 }
 
 .features-container {
-
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
 }
 
 .features-list {
@@ -207,6 +212,20 @@ ul, ol {
 
 /*------------------Project card--------------*/
 
+.filters-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+  margin: 96px 427px 96px;
+}
+
+.filters-item {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
 .filters-btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -216,6 +235,9 @@ ul, ol {
   color: var(--btn-top-color);
   background-color: #f4f4fd;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #E7E9FC;
+  border-radius: 4px;
 }
 
 .filters-btn:hover {
@@ -226,6 +248,21 @@ ul, ol {
 .filters-btn:focus {
   color: #FFFFFF;
   background-color: #404BBF;
+}
+
+.section-item {
+  background: #FFFFFF;
+  border: 1px solid #E7E9FC;
+  max-width: 360px;
+  max-height: 420px;
+}
+
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 
 .section-title {

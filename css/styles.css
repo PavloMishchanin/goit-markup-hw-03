@@ -250,6 +250,8 @@ ul, ol {
   background-color: #404BBF;
 }
 
+
+
 .section-item {
   background: #FFFFFF;
   border: 1px solid #E7E9FC;
@@ -342,6 +344,17 @@ ul, ol {
 /*---------------footer------------*/
 .footer {
   background: #2e2f42;
+}
+
+.container-footer {
+ 
+
+}
+
+.container-footer-text {
+  width: 264px;
+  margin: 100px 1020px 100px 0;
+  
 }
 
 .footer-logo {
